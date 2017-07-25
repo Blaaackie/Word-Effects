@@ -43,16 +43,16 @@ int main(int argc, const char * argv[]) {
     
     if([inputString containsString:@"?"]) {
            NSLog(@"I dont Know");
-    }
-    
-    if([inputString containsString:@"!"]) {
+    }else if([inputString containsString:@"!"]) {
         NSLog(@"Whoa! Calm Down!");
     }
     
     
-
+    char responseToPlay = 'y';
     printf("Would you like to play again?");
-    fgets(&playAgain, 10, stdin);
+    fgets(&responseToPlay, 1, stdin);
+        NSLog(@"You chose %c", responseToPlay);
+     playAgain = responseToPlay;
     }
     
     return 0;
