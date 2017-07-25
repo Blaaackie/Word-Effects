@@ -48,12 +48,12 @@ int main(int argc, const char * argv[]) {
     if([inputString containsString:@"!"]) {
         NSLog(@"Whoa! Calm Down!");
     }
-    }
+    
     
 
     printf("Would you like to play again?");
     fgets(&playAgain, 10, stdin);
-    
+    }
     
     return 0;
 }
